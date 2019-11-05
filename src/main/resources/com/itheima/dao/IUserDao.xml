@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--namespace属性的取值必须是dao接口的全限定类名-->
+<mapper namespace="com.itheima.dao.IUserDao">
+    <!--配置查询所有-->
+    <!--id属性必须是Dao接口中的方法名
+      resultType是要封装的实体类
+    -->
+    <select id="findAll" resultType="com.itheima.domain.User">
+        select * from user
+    </select>
+</mapper>
